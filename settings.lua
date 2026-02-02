@@ -52,7 +52,7 @@ data:extend({
     type = "string-setting",
     name = "fusionthruster-thruster-chamber-energy-value",
     setting_type = "startup",
-    default_value = "10MW",
+    default_value = "50MW",
     order = "c"
   },
   {
