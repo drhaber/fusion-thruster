@@ -296,18 +296,6 @@ local thruster_chamber = {
   flags = { "placeable-neutral", "placeable-player", "player-creation", "get-by-unit-number", "not-on-map", "not-in-made-in", "placeable-off-grid" },
   fluid_boxes =
   {
-    {
-      filter = "fusion-plasma",
-      volume = 10,
-      production_type = "input",
-      draw_only_when_connected = true,
-      pipe_connections =
-      {
-        {flow_direction = "input-output", connection_type = "normal", connection_category = "fusion-plasma", direction = defines.direction.west, position = {-1, 0}},
-        {flow_direction = "input-output", connection_type = "normal", connection_category = "fusion-plasma", direction = defines.direction.east, position = { 1, 0}}
-      }
-    },
-
     { 
       pipe_connections = 
       { 
@@ -317,16 +305,6 @@ local thruster_chamber = {
       volume = 180,
       filter = "thruster-fusion-plasma", 
       hide_connection_info = true
-    },
-
-    { 
-      pipe_connections = 
-      { 
-        { direction = defines.direction.north, flow_direction = "output", position = { 0, -0.28 } } 
-      }, 
-      production_type = "output", 
-      filter = "fluoroketone-hot", 
-      volume = 10
     }
   }
 }
@@ -357,12 +335,10 @@ local recipe_thruster_fusion_plasma = {
   category = "thruster-fusion-plasma",
   ingredients = 
   {
-    { type = "fluid", name = "fusion-plasma", amount = 4 }
   },
   results = 
   {
-    { type = "fluid", name = "thruster-fusion-plasma", amount = settings.startup["fusionthruster-thruster-chamber-conversion-value"].value },
-    { type = "fluid", name = "fluoroketone-hot", amount = 4 }
+    { type = "fluid", name = "thruster-fusion-plasma", amount = settings.startup["fusionthruster-thruster-chamber-conversion-value"].value }
   }
 }
 
