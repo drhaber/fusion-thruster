@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 13. 07. 2026
+  Changes:
+    - ncc1702
+    - merged open pull requests and fixed Fluid Filter Syntax
+    - Cheriende
+    - Updated info to 2.1 THANK YOU!
+    - Spordoz 
+    - Added a fix for Quality 
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 05. 05. 2025
   Changes:
