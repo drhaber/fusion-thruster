@@ -354,7 +354,7 @@ local recipe_thruster_fusion_plasma = {
   icon = "__space-age__/graphics/icons/fluid/fusion-plasma.png",
   enabled = false,
   energy_required = settings.startup["fusionthruster-thruster-chamber-conversion-speed"].value,
-  categories = {"thruster-fusion-plasma"},
+  category = "thruster-fusion-plasma",
   ingredients = 
   {
     { type = "fluid", name = "fusion-plasma", amount = 4 }
