@@ -303,8 +303,8 @@ local thruster_chamber = {
       draw_only_when_connected = true,
       pipe_connections =
       {
-        {flow_direction = "input-output", connection_type = "normal", connection_category = "fusion-plasma", direction = defines.direction.west, position = {-1, 0}},
-        {flow_direction = "input-output", connection_type = "normal", connection_category = "fusion-plasma", direction = defines.direction.east, position = { 1, 0}}
+        {flow_direction = "input-output", connection_type = "normal", connection_category = {"fusion-plasma"}, direction = defines.direction.west, position = {-1, 0}},
+        {flow_direction = "input-output", connection_type = "normal", connection_category = {"fusion-plasma"}, direction = defines.direction.east, position = { 1, 0}}
       }
     },
 
